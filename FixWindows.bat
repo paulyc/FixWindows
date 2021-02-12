@@ -5,6 +5,7 @@
 powercfg -h off
 
 :: Disable Windows 10 Reserve Storage. Because you're going to run out of SSD space long before Windows ever does.
+:: Saved me 7.5 GB, but not sure why Windows picked that amount, or if it varies much between installations.
 DISM.exe /Online /Set-ReservedStorageState /State:Disabled
 
 :: Probably disable the Antimalware "Service" (I didn't sign up for that kind of "service" thanks),
